@@ -4,17 +4,24 @@
  */
 
 import { Project, Service, ProcessStep, Award, MediaItem } from './types';
+import heroImage from './assets/images/kaave_academy_hero_1781951900307.jpg';
+import bawlyHouseImage from './assets/images/bawly_modern_house_1781951919922.jpg';
+import hollisHouseImage from './assets/images/hollis_passive_house_1781951938773.jpg';
+import artGalleryImage from './assets/images/gg_art_gallery_1781951957247.jpg';
+import kofiTiboriImage from './assets/images/kofi-tibori.jpg';
+import sketchingImage from './assets/images/architect_sketching_hand_1781951996756.jpg';
+import bestBuildsBannerImage from './assets/images/best_builds_banner_1781952017146.jpg';
+import sustainableFacadeImage from './assets/images/sustainable_architecture_1781952037762.jpg';
 
-// Let's reference the generated images precisely!
 export const IMAGES = {
-  hero: '/src/assets/images/kaave_academy_hero_1781951900307.jpg',
-  bawlyHouse: '/src/assets/images/bawly_modern_house_1781951919922.jpg',
-  hollisHouse: '/src/assets/images/hollis_passive_house_1781951938773.jpg',
-  artGallery: '/src/assets/images/gg_art_gallery_1781951957247.jpg',
-  kofiTibori: '/src/assets/images/kofi-tibori.jpg',
-  sketching: '/src/assets/images/architect_sketching_hand_1781951996756.jpg',
-  bestBuildsBanner: '/src/assets/images/best_builds_banner_1781952017146.jpg',
-  sustainableFacade: '/src/assets/images/sustainable_architecture_1781952037762.jpg'
+  hero: heroImage,
+  bawlyHouse: bawlyHouseImage,
+  hollisHouse: hollisHouseImage,
+  artGallery: artGalleryImage,
+  kofiTibori: kofiTiboriImage,
+  sketching: sketchingImage,
+  bestBuildsBanner: bestBuildsBannerImage,
+  sustainableFacade: sustainableFacadeImage
 };
 
 export const PROJECTS: Project[] = [
