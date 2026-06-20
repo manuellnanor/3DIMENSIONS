@@ -3,13 +3,32 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { IMAGES } from '../data';
 import { ArrowRight, BookOpen, Quote, X, Award, Briefcase, Sparkles, GraduationCap } from 'lucide-react';
 
 export default function TeamQuote() {
   const [showKofiModal, setShowKofiModal] = useState(false);
+
+  useEffect(() => {
+    if (!showKofiModal) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setShowKofiModal(false);
+      }
+    };
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [showKofiModal]);
 
   return (
     <section id="team" className="w-full bg-[#1c1a19] text-stone-100 py-16 sm:py-24 border-b border-neutral-900 overflow-hidden">
@@ -120,25 +139,31 @@ export default function TeamQuote() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-neutral-950/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6"
+            onClick={() => setShowKofiModal(false)}
+            className="fixed inset-0 z-50 overflow-y-auto bg-neutral-950/80 backdrop-blur-md flex items-start justify-center p-3 sm:p-6 md:items-center"
             id="kofi-bio-overlay"
           >
             <motion.div
               initial={{ scale: 0.95, y: 15 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 15 }}
-              className="bg-[#121111] border border-neutral-800 w-full max-w-4xl rounded-none overflow-hidden text-stone-100 flex flex-col md:flex-row relative"
+              onClick={(event) => event.stopPropagation()}
+              role="dialog"
+              aria-modal="true"
+              aria-label="Kofi Tibori biography"
+              className="my-auto bg-[#121111] border border-neutral-800 w-full max-w-4xl max-h-[calc(100dvh-1.5rem)] overflow-y-auto text-stone-100 flex flex-col md:max-h-[calc(100dvh-3rem)] md:flex-row md:overflow-hidden relative"
             >
               <button
                 onClick={() => setShowKofiModal(false)}
-                className="absolute top-4 right-4 bg-stone-900 text-stone-400 hover:text-white p-2 rounded-full cursor-pointer z-20 hover:bg-neutral-800"
+                className="sticky top-3 self-end -mb-11 mr-3 shrink-0 bg-black/85 text-white border border-white/20 hover:bg-neutral-800 p-2.5 rounded-full cursor-pointer z-30 shadow-lg md:absolute md:top-4 md:right-4 md:m-0"
                 aria-label="Close biography modal"
+                id="close-kofi-modal"
               >
                 <X className="w-5 h-5" />
               </button>
 
               {/* Sidebar Portrait column */}
-              <div className="md:w-2/5 aspect-4/5 md:aspect-auto relative bg-neutral-950">
+              <div className="h-[38dvh] min-h-[240px] shrink-0 md:h-auto md:min-h-0 md:w-2/5 md:aspect-auto relative bg-neutral-950">
                 <img
                   src={IMAGES.kofiTibori}
                   alt="Kofi Tibori"
@@ -153,7 +178,7 @@ export default function TeamQuote() {
               </div>
 
               {/* Main bio details content column */}
-              <div className="p-6 sm:p-8 md:w-3/5 overflow-y-auto max-h-[75vh] md:max-h-[600px] space-y-6">
+              <div className="p-6 sm:p-8 md:w-3/5 md:overflow-y-auto md:max-h-[600px] space-y-6">
                 <div className="hidden md:block">
                   <span className="text-[10px] tracking-widest text-amber-400 font-mono uppercase">LEADERSHIP PROFILE</span>
                   <h3 className="font-display font-medium text-3xl text-stone-50 mt-1">Kofi Tibori</h3>

@@ -87,7 +87,7 @@ export default function Hero({ projects, onViewProject }: HeroProps) {
         <div />
 
         {/* Heading Block */}
-        <div className="relative mt-12 h-[205px] max-w-2xl sm:h-[235px] md:mt-24 md:h-[265px]">
+        <div className="relative mt-12 h-[205px] max-w-2xl translate-y-8 sm:h-[235px] sm:translate-y-4 md:mt-24 md:h-[265px] md:translate-y-0">
           {projects.map((project, index) => {
             const isActive = index === currentIndex;
 
