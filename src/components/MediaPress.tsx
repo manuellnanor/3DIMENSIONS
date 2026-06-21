@@ -176,7 +176,7 @@ export default function MediaPress() {
 
               {/* Action bar */}
               <div className="bg-stone-50/50 p-4 border-t border-stone-100 flex justify-between items-center text-xs">
-                <span className="text-stone-400 font-mono">© 3DIMENSIONAL ARCHITECTURE PUBLICATION</span>
+                <span className="text-stone-400 font-mono">© 3DIMENSION ARCHITECTURE PUBLICATION</span>
                 <button
                   onClick={() => {
                     setSelectedArticle(null);

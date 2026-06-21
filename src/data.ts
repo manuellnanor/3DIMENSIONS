@@ -102,7 +102,7 @@ export const SERVICES: Service[] = [
   {
     id: 'renovation',
     title: 'Renovation',
-    description: '3DIMENSIONAL strives toward a socially-just and equitable world where buildings positively contribute to the environment.',
+    description: '3DIMENSION strives toward a socially-just and equitable world where buildings positively contribute to the environment.',
     svgPath: 'M 4 16 L 20 4 L 36 16 M 12 16 L 12 28 M 28 16 L 28 28 M 8 36 L 32 36',
     highlights: ['Adaptive Heritage Reuse', 'Thermal Envelope Retrofitting', 'Structural Strengthening']
   },
@@ -119,7 +119,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
   {
     id: 'listen-collaborate',
     title: 'Listen & Collaborate',
-    description: 'The success of 3DIMENSIONAL projects is rooted in strong relationships and true collaboration. Through our process, we learn how our clients live day to day and translate those insights into a tailored vision—designing homes that reflect and support their lives.',
+    description: 'The success of 3DIMENSION projects is rooted in strong relationships and true collaboration. Through our process, we learn how our clients live day to day and translate those insights into a tailored vision—designing homes that reflect and support their lives.',
     points: [
       'Comprehensive client briefing workshops',
       'Site environmental assessment & solar mapping',
@@ -160,7 +160,7 @@ export const MEDIA_ITEMS: MediaItem[] = [
   {
     id: 'media-1',
     category: 'Media',
-    title: 'How 3DIMENSIONAL became a model for affordable, sustainable living',
+    title: 'How 3DIMENSION became a model for affordable, sustainable living',
     image: IMAGES.sustainableFacade,
     date: 'March 14, 2026',
     readTime: '4 min read'
@@ -176,7 +176,7 @@ export const MEDIA_ITEMS: MediaItem[] = [
   {
     id: 'media-3',
     category: 'Media',
-    title: 'Industrial Luxury Style, explained by 3DIMENSIONAL Design Studio',
+    title: 'Industrial Luxury Style, explained by 3DIMENSION Design Studio',
     image: IMAGES.sketching,
     date: 'January 10, 2026',
     readTime: '5 min read'

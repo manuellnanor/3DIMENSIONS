@@ -187,7 +187,7 @@ export default function TeamQuote() {
 
                 <div className="space-y-4 text-stone-300 text-sm font-light leading-relaxed">
                   <p>
-                    Kofi brings extensive design and construction leadership to 3DIMENSIONAL, guiding projects from their earliest concepts through detailed coordination and delivery. His work advances the studio’s core signature design principle: <strong>Natural Modernism</strong>.
+                    Kofi brings extensive design and construction leadership to 3DIMENSION, guiding projects from their earliest concepts through detailed coordination and delivery. His work advances the studio’s core signature design principle: <strong>Natural Modernism</strong>.
                   </p>
                   <p>
                     He believes structures should possess material honesty, emphasizing daylight, locally sourced materials, efficient building systems, and close collaboration between design and construction teams.

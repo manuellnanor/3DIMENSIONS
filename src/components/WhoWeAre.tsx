@@ -24,7 +24,7 @@ export default function WhoWeAre() {
           {/* Master Narrative Copy */}
           <div className="lg:col-span-9 flex flex-col items-stretch">
             <p className="font-display font-light text-xl sm:text-3xl md:text-[34px] leading-relaxed md:leading-normal text-stone-900 tracking-tight">
-              3DIMENSIONAL is an award-winning modern architecture firm based in Accra, Ghana. 
+              3DIMENSION is a modern architecture firm based in Accra, Ghana. 
               We specialize in contemporary design through our signature{' '}
               <span className="font-medium text-stone-950">
                 Natural Modern

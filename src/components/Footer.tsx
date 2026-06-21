@@ -5,7 +5,7 @@
 
 import { ArrowUp, Instagram, Facebook, ArrowRight, Compass } from 'lucide-react';
 import { motion } from 'motion/react';
-import logoBlack from '../assets/brand/3dimensional-logo-black.svg';
+import logoBlack from '../assets/brand/3dimension-logo-black.svg';
 
 interface FooterProps {
   onContactClick: () => void;
@@ -43,10 +43,10 @@ export default function Footer({ onContactClick, onNavigate }: FooterProps) {
             <h4 className="text-[10px] tracking-widest font-mono text-stone-400 uppercase">INQUIRIES</h4>
             <div className="space-y-1">
               <a
-                href="mailto:hello@3dimensional.com"
+                href="mailto:hello@3dimension.com"
                 className="block font-display text-lg sm:text-xl font-medium text-stone-800 hover:text-stone-950 hover:underline transition-all"
               >
-                hello@3dimensional.com
+                hello@3dimension.com
               </a>
               <a
                 href="tel:+233244055010"
@@ -81,7 +81,7 @@ export default function Footer({ onContactClick, onNavigate }: FooterProps) {
         <div className="md:col-span-4 flex flex-col items-center justify-center space-y-4 border-t border-b border-stone-200 md:border-none py-8 md:py-0 select-none">
           <img
             src={logoBlack}
-            alt="3DIMENSIONAL Architecture"
+            alt="3DIMENSION Architecture"
             className="h-auto w-[230px] max-w-full"
           />
         </div>

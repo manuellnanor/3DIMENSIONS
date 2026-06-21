@@ -119,7 +119,7 @@ export default function FreeConsultationModal({ isOpen, onClose, prefilledProjec
                 <div className="w-5 h-5 flex items-center justify-center bg-stone-900 text-white font-display font-black text-xs">
                   M
                 </div>
-                <span className="font-mono text-[10px] tracking-wider text-stone-500 uppercase font-semibold">3DIMENSIONAL DESIGN FELLOWSHIP</span>
+                <span className="font-mono text-[10px] tracking-wider text-stone-500 uppercase font-semibold">3DIMENSION DESIGN FELLOWSHIP</span>
               </div>
 
               <button

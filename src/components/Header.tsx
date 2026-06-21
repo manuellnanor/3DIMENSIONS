@@ -6,8 +6,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import logoBlack from '../assets/brand/3dimensional-logo-black.svg';
-import logoWhite from '../assets/brand/3dimensional-logo-white.svg';
+import logoBlack from '../assets/brand/3dimension-logo-black.svg';
+import logoWhite from '../assets/brand/3dimension-logo-white.svg';
 
 interface HeaderProps {
   onContactClick: () => void;
@@ -70,7 +70,7 @@ export default function Header({ onContactClick, onNavigate, activeSection }: He
           <div className="relative w-[145px] sm:w-[170px]">
             <img
               src={logoWhite}
-              alt="3DIMENSIONAL Architecture"
+              alt="3DIMENSION Architecture"
               className={`h-auto w-full transition-all duration-500 ease-out group-hover:scale-[1.02] ${
                 isScrolled ? 'opacity-0' : 'opacity-100'
               }`}

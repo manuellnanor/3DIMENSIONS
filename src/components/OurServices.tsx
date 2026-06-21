@@ -21,7 +21,7 @@ export default function OurServices() {
     {
       id: 'renovation',
       title: 'Renovation',
-      description: '3DIMENSIONAL strives toward a socially just and equitable world where buildings positively contribute to the environment.',
+      description: '3DIMENSION strives toward a socially just and equitable world where buildings positively contribute to the environment.',
       image: renovationImage
     },
     {

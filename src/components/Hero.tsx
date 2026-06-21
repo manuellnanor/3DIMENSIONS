@@ -43,7 +43,7 @@ export default function Hero({ projects, onViewProject }: HeroProps) {
   };
 
   return (
-    <section id="home" className="relative w-full h-[65vh] md:h-[85vh] bg-stone-100 overflow-hidden">
+    <section id="home" className="relative w-full h-[75vh] md:h-[85vh] bg-stone-100 overflow-hidden">
       {/* Background Image Slider — slides overlap for a continuous crossfade. */}
       <div className="absolute inset-0">
         {projects.map((project, index) => {
